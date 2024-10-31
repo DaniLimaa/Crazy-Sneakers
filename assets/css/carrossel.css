@@ -1,0 +1,20 @@
+#banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+#banner img{
+    width: 100%;
+    height: 537px;
+    object-fit: cover;
+
+}
+
+.carrossel-container{
+    width: 100%;
+    max-width: 1920px;
+    background-size: cover;
+
+}
