@@ -8,3 +8,59 @@
     font-weight: 600;
     font-style: normal;
 }
+
+body{
+    background-color: #ECECEC;
+}
+
+header{
+    position: fixed;
+    top: 40px;
+    width: 80%;
+    z-index: 1;
+    padding: 0 10%;
+    max-width: 1317px;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    background-color: #BFBFBF;
+    width: 100%;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+
+.logo{
+    cursor: pointer;
+    display: flex;
+    padding-left: 16px;
+}
+
+.menu{
+    list-style: none;
+    gap: 43px;
+    display: flex;
+    padding-right: 27px;
+}
+
+.menu li{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #5B5B5B;
+    background-color: #EDEDED;
+
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#marcas-modelo>h2.titulo-marcas{
+    color: #164096;
+    font-size: 48px;
+    font-weight: 600;
+    padding: 26px 84px 0;
+}
