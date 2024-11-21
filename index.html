@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="./assets/css/carrossel.css">
     <link rel="stylesheet" href="./assets/css/marcas-modelo.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -25,7 +27,16 @@
 
     <section id="banner">
         <main class="carrossel-container">
-            <img src="./assets/img/banner/banner-air-force.png" alt="banner air force">
+            <div class="carrossel">
+                
+                <img src="./assets/img/banner/banner00.png" alt="banner00">
+                <img src="./assets/img/banner/banner01.png" alt="banner01">
+                <img src="./assets/img/banner/banner02.png" alt="banner02">
+                <img src="./assets/img/banner/banner03.png" alt="banner03">
+            </div>
+
+            <button class="prev" onclick="javascript:voltarSlide()"><i class="bi bi-arrow-left"></i></button>
+            <button class="next" onclick="javascript:proximoSlide()"><i class="bi bi-arrow-right"></i></button>
         </main>
     </section>
 
@@ -40,4 +51,5 @@
         </main>
     </section>
 </body>
+<script src="./assets/js/carrossel.js"></script>
 </html>
