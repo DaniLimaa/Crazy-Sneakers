@@ -9,3 +9,13 @@
     font-weight: 600;
     font-style: normal;
 }
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu li a{
+    list-style: none;
+} 
