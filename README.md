@@ -95,6 +95,7 @@
     > Ao clicar em cima de um dos cards dos tênis ele vai levar até a pagina do tênis, com algumas informações, por exemplo, imagens do produto, descrição dele, valor, selecionar o tamanho.
 ---
 - **Seção para filtrar os produtos**
+    >[!TIP]
     > Uma seção com filtros que o usuário vai escolher e os produtos serão filtrados de acordo
 ---
 - [ ] **Footer**
