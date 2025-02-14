@@ -11,11 +11,13 @@
 }
 
 header nav{
+    background-color: #BFBFBF;
+    padding: 0 35px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items:center;
 }
 
-.menu li a{
-    list-style: none;
-} 
+.logo{
+    
+}
