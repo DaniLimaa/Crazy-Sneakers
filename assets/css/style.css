@@ -18,6 +18,26 @@ header nav{
     align-items:center;
 }
 
-.logo{
-    
+.menu, .menu-icones{
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
+
+.menu li a, .menu-icones li a{
+    text-decoration: none;
+    color: #4369B8;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.menu li a:hover, .menu-icones li a:hover{
+    background-color: #4369B8;
+    color: white;
+    transition: transform 1s ease-in-out;
+}
+
+ol, ul {
+    padding-left: 0;
+    margin-bottom: 0;
 }
