@@ -1,0 +1,43 @@
+#tenis-recomendados>h2.titulo{
+    color: #164096;
+    font-size: 48px;
+    font-weight: 500;
+    padding: 63px 0 63px 91px;
+
+}
+
+#tenis-recomendados figure{
+    position: relative;
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+
+
+
+
+body{
+    background: #ECECEC;
+}
+
+#tenis-recomendados figcaption {
+    position: absolute;
+    top: 0;
+    font-weight: 500;
+    padding: 15px;
+    text-align: start;
+}
+
+#tenis-recomendados figcaption h2{
+    font-size: 16px;
+    color: #5B5B5B;
+    max-width: 245px;
+    overflow: hidden;
+}
+
+#tenis-recomendados figcaption, .preco{
+    color: #164096;
+}
