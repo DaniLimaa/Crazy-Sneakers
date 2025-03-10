@@ -1,0 +1,10 @@
+#marcas .container-marcas{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#marcas img{
+    background-color: #BFBFBF;
+    width: ;
+}

@@ -1,22 +1,35 @@
+#modelos .titulo-modelos{
+    color: #164096;
+    font-size: 48px;
+    font-weight: 500;
+    padding: 30px 0px 25px 40px;
+}
+
 #modelos .container-modelos{
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-#modelos figcaption h2{
+#modelos figure img{
+    border-radius: 20px 20px 0 0;
+    background-color: #FFF;
+}
+
+#modelos figure figcaption h2{
     font-size: 20px;
     font-weight: 500;
     color: #5B5B5B;
-    position: relative;
-    top: 20px;
-    left: 20px;
+    display: flex;
+    justify-content: center;
+    /* position: relative;
+    top: 7px;
+    left: 64px; */
 }
 
-#modelos figcaption{
+#modelos figure figcaption{
     background-color: #FFF;
     width: 250px;
     padding: 0 0 14px 0 ;
     border-radius: 0 0 20px 20px;
-    position: absolute;
 }
