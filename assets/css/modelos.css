@@ -1,0 +1,22 @@
+#modelos .container-modelos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#modelos figcaption h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: #5B5B5B;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+#modelos figcaption{
+    background-color: #FFF;
+    width: 250px;
+    padding: 0 0 14px 0 ;
+    border-radius: 0 0 20px 20px;
+    position: absolute;
+}
