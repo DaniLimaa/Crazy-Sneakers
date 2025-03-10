@@ -1,11 +1,3 @@
-#tenis-recomendados h2 .titulo-recomendados{
-    color: #164096;
-    font-size: 48px;
-    font-weight: 500;
-    padding: 63px 0 63px 91px;
-
-}
-
 #tenis-recomendados figure{
     position: relative;
     background-color: white;
@@ -36,4 +28,11 @@ body{
 
 #tenis-recomendados figcaption, .preco{
     color: #164096;
+}
+
+#tenis-recomendados .titulo-recomendados{
+    color: #164096;
+    font-size: 48px;
+    font-weight: 500;
+    padding: 63px 0 63px 91px;
 }
