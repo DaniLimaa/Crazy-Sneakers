@@ -1,0 +1,103 @@
+#tela-login .container-form {
+    position: relative;
+    top: 200px;
+}
+
+#tela-login .container-form form>h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: #4369B8;
+
+    padding: 0 0 15px 0;
+}
+
+#tela-login .container-login form, .btn-registrar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#tela-login .container-login form>input {
+    width: 450px;
+    height: 60px;
+    border-radius: 10px;
+    
+
+    background-color: #D9D9D9;
+    border: none;
+}
+
+#tela-login .container-login form>input:focus-visible {
+    border-color: #D9D9D9;
+}
+
+#tela-login .container-login form>.input-email{
+    margin: 0 0 48px 0 ;
+}
+
+#tela-login .aceitar-termos .checkbox-termos {
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+}
+
+#tela-login .aceitar-termos label {
+    max-width: 406px;
+
+    font-size: 16px;
+    font-style: italic;
+    color: #696969;
+}
+
+#tela-login .aceitar-termos{
+    padding: 30px 0 30px 0;
+}
+
+#tela-login .container-login form>input::placeholder {
+    padding: 18px;
+    color: #00000054;
+}
+
+#tela-login .container-form form>.btn-entrar {
+    width: 230px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #4369B8;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 166px;
+}
+
+#tela-login .btn-registrar p {
+    font-size: 16px;
+    font-style: italic;
+    color: #696969;
+}
+
+#tela-login .btn-registrar a {
+    width: 230px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #4369B8;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#tela-login .btn-registrar {
+}
+
+.row{
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+ol, ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}

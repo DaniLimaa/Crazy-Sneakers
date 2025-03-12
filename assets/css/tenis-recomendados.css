@@ -37,6 +37,10 @@ body{
     padding: 30px 0px 25px 40px;
 }
 
+.recomendados-container {
+    margin-bottom: 80px;
+}
+
 .row{
     --bs-gutter-x: 0;
     --bs-gutter-y: 0;
