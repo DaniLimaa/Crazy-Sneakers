@@ -1,0 +1,77 @@
+#tela-cadastro .container-form {
+    position: relative;
+    top: 100px;
+}
+
+#tela-cadastro .container-form form>h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: #4369B8;
+
+    padding: 0 0 15px 0;
+}
+
+#tela-cadastro .container-cadastro form>input {
+    width: 450px;
+    height: 60px;
+    border-radius: 10px;
+    
+
+    background-color: #D9D9D9;
+    border: none;
+    outline: none;
+    
+}
+
+#tela-cadastro .container-cadastro .bairro-casa>input, #tela-cadastro .container-cadastro .cidade-anoNascimento>input {
+    max-width: 450px;
+    height: 60px;
+    border-radius: 10px;
+
+    background-color: #D9D9D9;
+    border: none;
+    outline: none;
+}
+
+#tela-cadastro .container-cadastro form>input::placeholder {
+    padding-left: 10px;
+}
+
+#tela-cadastro .container-cadastro .cidade-anoNascimento>input::placeholder, #tela-cadastro .container-cadastro .bairro-casa>input::placeholder {
+    padding-left: 10px;
+}
+
+#tela-cadastro .aceitar-termos .checkbox-termos {
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+}
+
+#tela-cadastro .aceitar-termos label {
+    max-width: 406px;
+
+    font-size: 16px;
+    font-style: italic;
+    color: #696969;
+}
+
+#tela-cadastro .aceitar-termos{
+    padding: 30px 0 30px 0;
+}
+
+#tela-cadastro .container-form form>.btn-registrar {
+    width: 230px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #4369B8;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+
+#tela-cadastro .container-cadastro form, .btn-registrar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

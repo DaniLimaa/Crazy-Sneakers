@@ -12,10 +12,12 @@
     <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/carrossel.css">
-    <link rel="stylesheet" href="./assets/css/tenis-recomendados.css">
+    <link rel="stylesheet" href="./assets/css/tenis_recomendados.css">
     <link rel="stylesheet" href="./assets/css/modelos.css">
     <link rel="stylesheet" href="./assets/css/marcas.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/tela_login.css">
+    <link rel="stylesheet" href="./assets/css/tela_cadastro.css">
 </head>
 
 <body>
@@ -35,7 +37,8 @@
                 <li><a href="#"><i class="bi bi-search"></i></a></li>
                 <li><a href="#"><i class="bi bi-cart3"></i></a></li>
                 <li><a href="#"><i class="bi bi-heart"></i></a></li>
-                <li><a href="tela-login.php"><i class="bi bi-person-circle"></i></a></li>
+                <li><a href="#"><i class="bi bi-person-circle"></i></a></li>
+                <li><a href="teste.php"><i class="bi bi-person-circle"></i></a></li>
             </ul>
         </nav>
     </header>

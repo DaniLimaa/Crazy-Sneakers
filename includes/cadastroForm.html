@@ -1,0 +1,45 @@
+<section id="tela-cadastro">
+    <main class="container-cadastro">
+        <div class="row">
+
+            <div class="col-6">
+                <figure>
+                    <img src="./assets/img/tela-login/img-tela-login.png" alt="imagem da tela de login">
+                </figure>
+            </div>
+
+            <div class="col-6">
+                <div class="container-form">
+                    <form action="./usuario_cadastrar.php" method="POST">
+                        <h1>Cadastre-se</h1>
+
+                        <input type="hidden"  placeholder="id"     name="id_info_pessoa" >
+
+                        <input type="text"  placeholder="Nome de usuario"    name="usuario">
+                        <input type="text"   placeholder="Nome"     name="nome"    class="input-email">
+                        <input type="email"  placeholder="Email"    name="email">
+                        <input type="number" placeholder="Telefone" name="telefone">
+                        <input type="text"   placeholder="Rua"      name="rua">
+                        <div class="bairro-casa">
+                            <input type="text" placeholder="Bairro"         name="bairro">
+                            <input type="text" placeholder="Numero da Casa" name="n_casa">
+                        </div>
+                        <div class="cidade-anoNascimento">
+                            <input type="text"   placeholder="Cidade"            name="cidade">
+                            <input type="number" placeholder="Ano do nascimento" name="ano_nascimento">
+                        </div>
+                        
+                        <input type="password"   placeholder="Senha"    name="senha">
+
+                        <div class="aceitar-termos">
+                            <input type="checkbox" name="checkbox-termos" class="checkbox-termos">
+                            <label>Você concorda com os Termos de Uso e Políticas de privacidade da Crazy Sneakers?</label>
+                        </div>
+
+                        <input type="submit" value="Registrar-se" class="btn-registrar">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</section>
