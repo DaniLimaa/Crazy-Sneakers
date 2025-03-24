@@ -29,11 +29,17 @@
     outline: none;
 }
 
-#tela-login .container-login form>input::placeholder {
-    padding-left: 18px;
+#tela-login .container-login form>input {
+    margin: 0 0 10px 0;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-#tela-login .container-login form>.input-email{
+#tela-login .container-login form>.btn-entrar{
+    padding: 0;
+}
+
+#tela-login .container-login form>.input-usuario{
     margin: 0 0 48px 0 ;
 }
 
@@ -53,11 +59,6 @@
 
 #tela-login .aceitar-termos{
     padding: 30px 0 30px 0;
-}
-
-#tela-login .container-login form>input::placeholder {
-    padding: 18px;
-    color: #00000054;
 }
 
 #tela-login .container-form form>.btn-entrar {

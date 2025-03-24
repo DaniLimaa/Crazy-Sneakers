@@ -1,6 +1,6 @@
 #tela-cadastro .container-form {
     position: relative;
-    top: 100px;
+    top: 50px;
 }
 
 #tela-cadastro .container-form form>h1{
@@ -33,12 +33,17 @@
     outline: none;
 }
 
-#tela-cadastro .container-cadastro form>input::placeholder {
-    padding-left: 10px;
+#tela-cadastro .container-cadastro form>.btn-registrar {
+    padding: 0;
 }
 
-#tela-cadastro .container-cadastro .cidade-anoNascimento>input::placeholder, #tela-cadastro .container-cadastro .bairro-casa>input::placeholder {
-    padding-left: 10px;
+#tela-cadastro .container-cadastro form>input {
+    margin: 0 0 10px 0;
+    padding-left: 20px;
+}
+
+#tela-cadastro .container-cadastro form>.cidade-anoNascimento input, #tela-cadastro .container-cadastro form>.bairro-casa {
+    margin: 0 0 10px 0;
 }
 
 #tela-cadastro .aceitar-termos .checkbox-termos {
@@ -67,7 +72,6 @@
     color: white;
     font-size: 20px;
     font-weight: 700;
-    
 }
 
 #tela-cadastro .container-cadastro form, .btn-registrar {

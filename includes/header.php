@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -37,8 +41,7 @@
                 <li><a href="#"><i class="bi bi-search"></i></a></li>
                 <li><a href="#"><i class="bi bi-cart3"></i></a></li>
                 <li><a href="#"><i class="bi bi-heart"></i></a></li>
-                <li><a href="#"><i class="bi bi-person-circle"></i></a></li>
-                <li><a href="teste.php"><i class="bi bi-person-circle"></i></a></li>
+                <li><a href="./loginUsuario.php"><i class="bi bi-person-circle"></i></a></li>
             </ul>
         </nav>
     </header>
