@@ -30,3 +30,11 @@
     padding: 0 0 14px 0 ;
     border-radius: 0 0 20px 20px;
 }
+
+#modelos .container-modelos figure{
+    transition: 0.3s ease-in-out;
+}
+
+#modelos .container-modelos figure:hover{
+    transform: scale(1.1);
+}

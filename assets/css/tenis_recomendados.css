@@ -5,6 +5,7 @@
     max-width: 400px;
     height: 300px;
     border-radius: 20px;
+    margin: 0 0 20px 0;
 }
 
 body{
@@ -44,4 +45,13 @@ body{
 .row{
     --bs-gutter-x: 0;
     --bs-gutter-y: 0;
+}
+
+#tenis-recomendados .recomendados-container figure{
+    transition: 0.3s ease-in-out;
+}
+
+#tenis-recomendados .recomendados-container figure:hover{
+    transform: scale(1.03);
+    transition: ease-in-out;
 }
