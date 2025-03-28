@@ -1,26 +1,23 @@
 <?php
+require './classes/BancoDados.php';
+include './includes/header.php';
 
-include 'includes/header.php';
+$bancoDados = new BancoDados();
+$conexaoBanco = $bancoDados->conectarBancoDados();
 
 if ($_SERVER["REQUEST_METHOD"] == 'POST' && !empty($_POST)) {
 
     $usuarioForm = $_POST['usuario'];
     $senhaForm   = $_POST['senha'];
+    
+    $verificar = "SELECT * FROM tb_usuario WHERE usuario = '{$usuarioForm}' AND senha = '{$senhaForm}'";
 
-    $dsn = 'mysql:dbname=db_crazy_sneakers;host=127.0.0.1';
-    $user = 'root';
-    $password = '';
-
-    $banco = new PDO($dsn, $user, $password);
-
-    $verificar = "SELECT * FROM tb_usuario WHERE usuario '{$usuarioForm}' AND senha = '{$senhaForm}'";
-
-    $resultado = $banco->query($verificar)->fetch();
+    $resultado = $conexaoBanco->query($verificar)->fetch();
 
     if (!empty($resultado) && $resultado != false){
         
         $selectUser = "SELECT * FROM tb_info_usuario WHERE id = {$resultado['id_info_usuario']}";
-        $dadosUser = $banco->query($selectUser)->fetch();
+        $dadosUser = $conexaoBanco->query($selectUser)->fetch();
 
         session_start();
 
@@ -31,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST' && !empty($_POST)) {
         $_SESSION['ano_nascimento']  = $dadosUser['ano_nascimento'];
 
 
-        header('Location: index.php');
+        header('Location: teste.php');
 
     } else {
         echo '<script>

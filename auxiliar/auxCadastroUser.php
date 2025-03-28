@@ -1,10 +1,8 @@
 <?php
+require './classes/BancoDados.php';
 
-$dsn = 'mysql:dbname=db_crazy_sneakers;host=127.0.0.1';
-$user = 'root';
-$password = '';
-
-$banco = new PDO($dsn, $user, $password);
+$bancoDados = new BancoDados();
+$conexaoBanco = $bancoDados->conectarBancoDados();
 
 $usuarioForm  =     $_POST['usuario'];
 $senhaForm    =     $_POST['senha'];
@@ -20,7 +18,7 @@ $ano_nascimentoForm =   $_POST['ano_nascimento'];
 
 $insert = "INSERT INTO tb_info_usuario (nome, email, telefone, rua, bairro, n_casa, cidade, ano_nascimento) VALUE (:nome, :email, :telefone, :rua, :bairro, :n_casa, :cidade, :ano_nascimento)";
 
-$box = $banco->prepare($insert);
+$box = $conexaoBanco->prepare($insert);
 
 $box->execute([
     'nome'           => $nomeForm,
@@ -33,11 +31,11 @@ $box->execute([
     'ano_nascimento' => $ano_nascimentoForm
 ]);
 
-$id_info_usuario = $banco->lastInsertId();
+$id_info_usuario = $conexaoBanco->lastInsertId();
 
 $insert = "INSERT INTO tb_usuario (usuario, senha, id_info_usuario) VALUE (:usuario, :senha, :id_info_usuario)";
 
-$box = $banco->prepare($insert);
+$box = $conexaoBanco->prepare($insert);
 
 $box->execute([
     'usuario'         => $usuarioForm,
