@@ -38,8 +38,8 @@
             </ul>
 
             <ul class="menu-icones">
-                <li><a href="#"><i class="bi bi-search"></i></a></li>
                 <li><a href="#"><i class="bi bi-cart3"></i></a></li>
+                <li><a href="./includes/telaProduto.html"><i class="bi bi-info-circle"></i></i></a></li>
                 <li><a href="./loginUsuario.php"><i class="bi bi-person-circle"></i></a></li>
             </ul>
         </nav>
