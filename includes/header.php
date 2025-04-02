@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/tela_login.css">
     <link rel="stylesheet" href="./assets/css/tela_cadastro.css">
+    <link rel="stylesheet" href="./assets/css/detalhes.css">
+
 </head>
 
 <body>
@@ -39,7 +41,7 @@
 
             <ul class="menu-icones">
                 <li><a href="#"><i class="bi bi-cart3"></i></a></li>
-                <li><a href="./includes/telaProduto.html"><i class="bi bi-info-circle"></i></i></a></li>
+                <li><a href="./detalheProduto.php"><i class="bi bi-info-circle"></i></i></a></li>
                 <li><a href="./loginUsuario.php"><i class="bi bi-person-circle"></i></a></li>
             </ul>
         </nav>

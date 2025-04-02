@@ -1,4 +1,5 @@
 <?php
+
 require './classes/BancoDados.php';
 
 $bancoDados = new BancoDados();
