@@ -81,5 +81,12 @@
 }
 
 #detalhes-produto .fotos-produtos figure{
-    padding-top: 25px ;
+    padding-top: 25px ;;
+}
+
+#detalhes-produto .fotos-produtos figure img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
 }

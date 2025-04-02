@@ -50,18 +50,18 @@ include './includes/header.php'
                     <div class="row">
                         <div class="col-6">
                             <figure>
-                                <img src="./assets/img/tenis-recomendados/nike-air-max-tn-photo-blue.png" alt="">
+                                <img src="./assets/img/fotos-produtos/foto-produto-nike-air-max-plus-photo-blue1.webp" alt="">
                             </figure>
                             <figure>
-                                <img src="./assets/img/tenis-recomendados/nike-air-max-tn-photo-blue.png" alt="">
+                                <img src="./assets/img/fotos-produtos/foto-produto-nike-air-max-plus-photo-blue2.webp" alt="">
                             </figure>
                         </div>
                         <div class="col-6">
                             <figure>
-                                <img src="./assets/img/tenis-recomendados/nike-air-max-tn-photo-blue.png" alt="">
+                                <img src="./assets/img/fotos-produtos/foto-produto-nike-air-max-plus-photo-blue3.webp" alt="">
                             </figure>
                             <figure>
-                                <img src="./assets/img/tenis-recomendados/nike-air-max-tn-photo-blue.png" alt="">
+                                <img src="./assets/img/fotos-produtos/foto-produto-nike-air-max-plus-photo-blue1.webp" alt="">
                             </figure>
                         </div>
                     </div>
