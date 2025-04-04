@@ -3,6 +3,7 @@
     font-weight: 700;
     color: #4369B8;
     padding: 50px 0px 20px 80px;
+    max-width: 600px;
 }
 
 #detalhes-produto .container-tamanho {
@@ -81,7 +82,7 @@
 }
 
 #detalhes-produto .fotos-produtos figure{
-    padding-top: 25px ;;
+    padding-top: 25px ;
 }
 
 #detalhes-produto .fotos-produtos figure img {

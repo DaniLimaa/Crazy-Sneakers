@@ -20,6 +20,13 @@ body{
     text-align: start;
 }
 
+#tenis-recomendados .foto-tenis{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
 #tenis-recomendados figcaption h2{
     font-size: 16px;
     color: #5B5B5B;

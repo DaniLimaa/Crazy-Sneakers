@@ -3,7 +3,8 @@
     <main class="recomendados-container">
         <div class="row">
 
-            <?php for ($i = 0; $i < 9; $i++) {
+            <?php foreach($dadosTenis as $value) {
+
                 include './includes/tenis_card.php';
             }
             ?>
