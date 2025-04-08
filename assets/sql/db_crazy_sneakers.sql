@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 07/04/2025 às 16:50
+-- Tempo de geração: 08/04/2025 às 16:50
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.0.30
 
@@ -106,7 +106,8 @@ INSERT INTO `tb_info_produto` (`id`, `nome`, `cor`, `preco`, `descricao`, `foto_
 (19, 'April Skateboards x Nike SB Dunk Low Turbo Green', 'Azul Claro', 700, 'O skatista australiano vem expandindo sua empresa, a April Skateboards, há algum tempo. Ao longo do curto espaço de tempo, ele acumulou algumas colaborações com outras marcas conceituadas no mundo do skate, como Diamond Supply Co., Spitfire Wheels e também Nike SB; a marca adicionará sua primeira série de calçados colaborativos com a Nike SB neste verão. Com lançamento previsto para toda a família, espera-se que o Nike SB chegue como costuma acontecer em termos de formato e ferramentas e opta por um novo design excelente para adicionar à sua coleção. Ostentando uma parte superior em malha branca, o verde turbo é usado no sistema de sobreposição de camurça, enquanto a marca April é apresentada na parte inferior dos tornozelos. O par também contará com um gráfico de flores na sola de borracha translúcida, que é facilmente o destaque dessas imagens iniciais.', 'foto-exibir-dunk-low-turbo-green.webp'),
 (20, 'Vans Knu Skool Black True White', 'Preto', 700, 'O Knu Skool é uma interpretação moderna de um estilo clássico dos anos 90, definido por sua língua inchada e Sidestripe™ moldado em 3D, e amarrado com cadarços grandes e grossos. Com seu perfil marcante e detalhes de estilo dramáticos, o Knu Skool reproduz o original Old Skool™ enquanto mistura um ícone do passado com as tendências de hoje.', 'foto-exibir-knu-skool-black-true-white.webp'),
 (21, 'Vans Knu Skool Brown', 'Marrom', 700, 'Os Knu Skool são uma interpretação moderna de um estilo clássico dos anos 90, definido pela sua pala volumosa e risca lateral moldada em 3D, e com atacadores grandes e grossos. Com o seu perfil impactante e detalhes de estilo dramáticos, os Knu Skool baseiam-se nos Old Skool originais, misturando um ícone do passado com as tendências atuais.', 'foto-exibir-knu-skool-brown.webp'),
-(22, 'Disney x Vans Knu Skool Black', 'Marrom', 700, 'Por 100 anos, a paixão da Disney tem sido contar histórias. De uma geração para outra, as histórias da Disney inspiraram criadores, influenciaram a cultura pop e nos uniram. Este ano, a Vans tem o orgulho de celebrar um século de histórias e personagens inesquecíveis da Disney que conquistaram os corações do público em todo o mundo com esta coleção feita para toda a família. Entrando no mundo da Disney através de lentes Off The Wall, o Disney x Vans Knu Skool homenageia O Rei Leão com uma reviravolta ao canalizar o intrigante tio Scar de Simba. Com seu rosto estampado na sola e silhuetas de hienas bordadas nos calcanhares, este sapato fofo dos anos 90 permite que você celebre a magia atemporal da Disney todos os dias.', 'foto-exibir-knu-skool-disney.webp');
+(22, 'Disney x Vans Knu Skool Black', 'Marrom', 700, 'Por 100 anos, a paixão da Disney tem sido contar histórias. De uma geração para outra, as histórias da Disney inspiraram criadores, influenciaram a cultura pop e nos uniram. Este ano, a Vans tem o orgulho de celebrar um século de histórias e personagens inesquecíveis da Disney que conquistaram os corações do público em todo o mundo com esta coleção feita para toda a família. Entrando no mundo da Disney através de lentes Off The Wall, o Disney x Vans Knu Skool homenageia O Rei Leão com uma reviravolta ao canalizar o intrigante tio Scar de Simba. Com seu rosto estampado na sola e silhuetas de hienas bordadas nos calcanhares, este sapato fofo dos anos 90 permite que você celebre a magia atemporal da Disney todos os dias.', 'foto-exibir-knu-skool-disney.webp'),
+(23, 'Puma-180 White', 'Branco', 750, 'Estamos aproveitando a estética do skate dos anos 90 e renovando-a para a geração atual de skatistas com o PUMA-180. Este tênis apresenta um design volumoso, acolchoamento grosso e cabedal técnico lo-fi.', 'foto-exibir-puma-180-white.jpg');
 
 -- --------------------------------------------------------
 
@@ -154,11 +155,11 @@ CREATE TABLE `tb_marcas` (
 --
 
 INSERT INTO `tb_marcas` (`id`, `marca`) VALUES
-(1, 'nike'),
-(2, 'adidas'),
-(3, 'vans'),
-(4, 'new balence'),
-(5, 'puma');
+(1, 'Nike'),
+(2, 'Adidas'),
+(3, 'Vans'),
+(4, 'New balance'),
+(5, 'Puma');
 
 -- --------------------------------------------------------
 
@@ -200,7 +201,8 @@ INSERT INTO `tb_produtos` (`id`, `info_produto_id`, `marcas_id`, `silhueta_id`, 
 (19, 19, 1, 4, 20),
 (20, 20, 3, 7, 22),
 (21, 21, 3, 7, 23),
-(22, 22, 3, 7, 24);
+(22, 22, 3, 7, 24),
+(23, 23, 5, 9, 21);
 
 -- --------------------------------------------------------
 
@@ -218,16 +220,16 @@ CREATE TABLE `tb_silhueta` (
 --
 
 INSERT INTO `tb_silhueta` (`id`, `silhueta`) VALUES
-(1, 'air max plus'),
-(2, 'air jordan 1 high'),
-(3, 'air force 1'),
-(4, 'dunk low'),
-(5, 'campus 00s'),
-(6, 'adi2000'),
-(7, 'knu skool'),
+(1, 'Air Max Plus'),
+(2, 'Air Jordan 1 High'),
+(3, 'Air Force 1'),
+(4, 'Dunk Low'),
+(5, 'Campus 00s'),
+(6, 'Adi2000'),
+(7, 'Knu Skool'),
 (8, '9060'),
 (9, '180'),
-(10, 'air jordan 1 low');
+(10, 'Air Jordan 1 Low');
 
 -- --------------------------------------------------------
 
@@ -361,7 +363,7 @@ ALTER TABLE `tb_foto_produto`
 -- AUTO_INCREMENT de tabela `tb_info_produto`
 --
 ALTER TABLE `tb_info_produto`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT de tabela `tb_info_usuario`
@@ -379,7 +381,7 @@ ALTER TABLE `tb_marcas`
 -- AUTO_INCREMENT de tabela `tb_produtos`
 --
 ALTER TABLE `tb_produtos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT de tabela `tb_silhueta`
