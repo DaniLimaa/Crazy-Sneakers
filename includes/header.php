@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="./assets/css/tela_login.css">
     <link rel="stylesheet" href="./assets/css/tela_cadastro.css">
     <link rel="stylesheet" href="./assets/css/detalhes.css">
-    <link rel="stylesheet" href="./assets/css/teste.css">
 
 </head>
 

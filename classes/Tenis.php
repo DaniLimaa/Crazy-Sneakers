@@ -107,4 +107,83 @@ class Tenis
 
         return $this->conexaoBanco->query($script)->fetchAll();
     }
+
+    public function exibirMarcaNike($limite = '')
+    {
+        $auxScript = '';
+
+        if (!empty($limite)) {
+            $auxScript = " ORDER BY RAND() LIMIT {$limite}";
+        }
+        $script = "SELECT tb_produtos.*, tb_marcas.marca, tb_info_produto.nome, tb_info_produto.preco, tb_info_produto.foto_exibicao
+                FROM tb_produtos
+                JOIN tb_marcas ON tb_produtos.marcas_id = tb_marcas.id
+                JOIN tb_info_produto ON tb_produtos.info_produto_id = tb_info_produto.id
+                WHERE LOWER(tb_marcas.marca) = 'nike';" . $auxScript;
+
+        return $this->conexaoBanco->query($script)->fetchAll();
+    }
+
+    public function exibirMarcaAdidas($limite = '')
+    {
+        $auxScript = '';
+
+        if (!empty($limite)) {
+            $auxScript = " ORDER BY RAND() LIMIT {$limite}";
+        }
+        $script = "SELECT tb_produtos.*, tb_marcas.marca, tb_info_produto.nome, tb_info_produto.preco, tb_info_produto.foto_exibicao
+                FROM tb_produtos
+                JOIN tb_marcas ON tb_produtos.marcas_id = tb_marcas.id
+                JOIN tb_info_produto ON tb_produtos.info_produto_id = tb_info_produto.id
+                WHERE LOWER(tb_marcas.marca) = 'adidas';" . $auxScript;
+
+        return $this->conexaoBanco->query($script)->fetchAll();
+    }
+
+    public function exibirMarcaPuma($limite = '')
+    {
+        $auxScript = '';
+
+        if (!empty($limite)) {
+            $auxScript = " ORDER BY RAND() LIMIT {$limite}";
+        }
+        $script = "SELECT tb_produtos.*, tb_marcas.marca, tb_info_produto.nome, tb_info_produto.preco, tb_info_produto.foto_exibicao
+                FROM tb_produtos
+                JOIN tb_marcas ON tb_produtos.marcas_id = tb_marcas.id
+                JOIN tb_info_produto ON tb_produtos.info_produto_id = tb_info_produto.id
+                WHERE LOWER(tb_marcas.marca) = 'puma';" . $auxScript;
+
+        return $this->conexaoBanco->query($script)->fetchAll();
+    }
+
+    public function exibirMarcaVans($limite = '')
+    {
+        $auxScript = '';
+
+        if (!empty($limite)) {
+            $auxScript = " ORDER BY RAND() LIMIT {$limite}";
+        }
+        $script = "SELECT tb_produtos.*, tb_marcas.marca, tb_info_produto.nome, tb_info_produto.preco, tb_info_produto.foto_exibicao
+                FROM tb_produtos
+                JOIN tb_marcas ON tb_produtos.marcas_id = tb_marcas.id
+                JOIN tb_info_produto ON tb_produtos.info_produto_id = tb_info_produto.id
+                WHERE LOWER(tb_marcas.marca) = 'vans';" . $auxScript;
+
+        return $this->conexaoBanco->query($script)->fetchAll();
+    }
+    public function exibirMarcaNewBalance($limite = '')
+    {
+        $auxScript = '';
+
+        if (!empty($limite)) {
+            $auxScript = " ORDER BY RAND() LIMIT {$limite}";
+        }
+        $script = "SELECT tb_produtos.*, tb_marcas.marca, tb_info_produto.nome, tb_info_produto.preco, tb_info_produto.foto_exibicao
+                FROM tb_produtos
+                JOIN tb_marcas ON tb_produtos.marcas_id = tb_marcas.id
+                JOIN tb_info_produto ON tb_produtos.info_produto_id = tb_info_produto.id
+                WHERE LOWER(tb_marcas.marca) = 'new balance';" . $auxScript;
+
+        return $this->conexaoBanco->query($script)->fetchAll();
+    }
 }
