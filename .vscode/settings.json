@@ -3,8 +3,11 @@
         "conexao",
         "descricao",
         "exibicao",
+        "informacoes",
+        "Informacoes",
         "nike",
         "preco",
-        "tenis"
+        "tenis",
+        "Usuarios"
     ]
 }

@@ -8,15 +8,15 @@
                 <div class="col-6">
                     <div class="primeira-coluna">
                         <label>Nome:</label>
-                        <input type="text" disabled>
+                        <input type="text" value="<?= $informacoesUsuario['nome'] ?>" disabled>
                         <label>Email:</label>
-                        <input type="email" disabled>
+                        <input type="email" value="<?= $informacoesUsuario['email'] ?>" disabled>
                         <label>Telefone:</label>
-                        <input type="number" disabled>
+                        <input type="number" value="<?= $informacoesUsuario['telefone'] ?>" disabled>
                         <label>Rua:</label>
-                        <input type="text" disabled>
+                        <input type="text" value="<?= $informacoesUsuario['rua'] ?>" disabled>
                         <label>Nome de usuario:</label>
-                        <input type="text" disabled>
+                        <input type="text" value="<?= $informacoesUsuario['usuario'] ?>" disabled>
 
                         <a href="#" class="btn btn-primary">Sair da Conta</a>
 
@@ -26,15 +26,15 @@
                 <div class="col-6">
                     <div class="segunda-coluna">
                         <label>Bairro:</label>
-                        <input type="text" disabled>
+                        <input type="text" value="<?= $informacoesUsuario['bairro'] ?>" disabled>
                         <label>Numero da casa:</label>
-                        <input type="number" disabled>
+                        <input type="number" value="<?= $informacoesUsuario['n_casa'] ?>" disabled>
                         <label>Cidade:</label>
-                        <input type="text" disabled>
+                        <input type="text" value="<?= $informacoesUsuario['cidade'] ?>" disabled>
                         <label>Ano nascimento:</label>
-                        <input type="number" disabled>
+                        <input type="number" value="<?= $informacoesUsuario['ano_nascimento'] ?>" disabled>
                         <label>Senha:</label>
-                        <input type="text" disabled>
+                        <input type="text" value="<?= $informacoesUsuario['senha'] ?>" disabled>
 
                         <a href="#" class="btn btn-primary">Editar Informações</a>
 

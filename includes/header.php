@@ -41,7 +41,7 @@
 
             <ul class="menu-icones">
                 <li><a href="#"><i class="bi bi-cart3"></i></a></li>
-                <li><a href="./teste.php"><i class="bi bi-info-circle"></i></i></a></li>
+                <li><a href="./informacoesPerfil.php"><i class="bi bi-info-circle"></i></i></a></li>
                 <li><a href="./loginUsuario.php"><i class="bi bi-person-circle"></i></a></li>
             </ul>
         </nav>

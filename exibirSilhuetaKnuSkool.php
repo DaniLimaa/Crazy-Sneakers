@@ -1,10 +1,10 @@
 <?php
 require './classes/Tenis.php';
+include './includes/header.php';
 
 $tenis = new Tenis();
 $dadosTenis = $tenis->exibirSilhuetaKnuSkool();
 
-include './includes/header.php';
 
 include './includes/tenis_lista.php';
 ?>

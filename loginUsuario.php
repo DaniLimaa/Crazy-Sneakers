@@ -20,15 +20,20 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST' && !empty($_POST)) {
         $dadosUser = $conexaoBanco->query($selectUser)->fetch();
 
         session_start();
-
-        $_SESSION['id_info_usuario'] = $dadosUser['id_info_usuario'];
+        
+        $_SESSION['id'] = $dadosUser['id'];
         $_SESSION['nome']            = $dadosUser['nome'];
         $_SESSION['email']           = $dadosUser['email'];
         $_SESSION['telefone']        = $dadosUser['telefone'];
+        $_SESSION['rua']             = $dadosUser['rua'];
+        $_SESSION['bairro']          = $dadosUser['bairro'];
+        $_SESSION['n_casa']          = $dadosUser['n_casa'];
+        $_SESSION['cidade']          = $dadosUser['cidade'];
         $_SESSION['ano_nascimento']  = $dadosUser['ano_nascimento'];
+        
+        
 
-
-        header('Location: teste.php');
+        header('Location: exibirDadosUsuario.php');
 
     } else {
         echo '<script>
