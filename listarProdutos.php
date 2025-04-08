@@ -11,7 +11,7 @@ include './includes/tenis_lista.php';
 ?>
 <style> 
     #tenis-recomendados {
-        margin-top: 20px;
+        margin-top: 70px;
     }
 </style>
 <?php
