@@ -1,0 +1,91 @@
+#perfil .container-perfil>h1 {
+    font-size: 45px;
+    font-weight: 600;
+
+    display: flex;
+    justify-content: center;
+    color: #164096;
+    margin: 40px 0 50px 0;
+}
+
+#perfil .container-perfil .primeira-coluna>input {
+    width: 600px;
+    height: 50px;
+    padding-left: 20px;
+
+    border: none;
+    outline: none;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+
+    margin: 6px;
+}
+
+#perfil .container-perfil .segunda-coluna>input {
+    width: 600px;
+    height: 50px;
+    padding-left: 20px;
+
+    outline: none;
+    border: none;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+
+    margin: 6px;
+}
+
+#perfil .container-perfil .primeira-coluna, .segunda-coluna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#perfil .container-perfil .primeira-coluna>label {
+    font-size: 20px;
+    font-weight: 700;
+    color: #4369B8;
+}
+
+#perfil .container-perfil .segunda-coluna>label {
+    font-size: 20px;
+    font-weight: 700;
+    color: #4369B8;
+}
+
+#perfil .container-perfil .primeira-coluna>a {
+    width: 600px;
+    height: 50px;
+    margin-top: 40px;
+
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+
+    background-color: #8e1010;
+    transition: 0.3s ease-in-out;
+}
+
+#perfil .container-perfil .primeira-coluna>a:hover {
+    transform: scale(1.1);
+}
+
+#perfil .container-perfil .segunda-coluna>a {
+    width: 600px;
+    height: 50px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+
+    background-color: #d6c20c;
+    transition: 0.3s ease-in-out;
+}
+
+#perfil .container-perfil .segunda-coluna>a:hover {
+    transform: scale(1.1);
+}
