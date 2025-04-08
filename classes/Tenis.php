@@ -49,7 +49,62 @@ class Tenis
     JOIN tb_foto_produto ON tb_produtos.foto_produto_id = tb_foto_produto.id
     WHERE tb_produtos.id = {$id}";
 
-    return $this->conexaoBanco->query($script)->fetch();
+        return $this->conexaoBanco->query($script)->fetch();
+    }
+    
+    public function exibirSilhuetaDunkLow($limite = '')
+    {
+        $auxScript = '';
 
-    } 
+        if (!empty($limite)) {
+            $auxScript = " ORDER BY RAND() LIMIT {$limite}";
+        }
+        $script = "SELECT *
+                    FROM tb_info_produto
+                    WHERE LOWER(nome) LIKE '%dunk low%';" . $auxScript;
+
+        return $this->conexaoBanco->query($script)->fetchAll();
+    }
+
+    public function exibirSilhuetaCampus00s($limite = '')
+    {
+        $auxScript = '';
+
+        if (!empty($limite)) {
+            $auxScript = " ORDER BY RAND() LIMIT {$limite}";
+        }
+        $script = "SELECT *
+                    FROM tb_info_produto
+                    WHERE LOWER(nome) LIKE '%campus 00s%';" . $auxScript;
+
+        return $this->conexaoBanco->query($script)->fetchAll();
+    }
+
+    public function exibirSilhuetaKnuSkool($limite = '')
+    {
+        $auxScript = '';
+
+        if (!empty($limite)) {
+            $auxScript = " ORDER BY RAND() LIMIT {$limite}";
+        }
+        $script = "SELECT *
+                    FROM tb_info_produto
+                    WHERE LOWER(nome) LIKE '%knu skool%';" . $auxScript;
+
+        return $this->conexaoBanco->query($script)->fetchAll();
+    }
+
+    public function exibirSilhuetaAirMaxPlus($limite = '')
+    {
+        $auxScript = '';
+
+        if (!empty($limite)) {
+            $auxScript = " ORDER BY RAND() LIMIT {$limite}";
+        }
+        $script = "SELECT *
+                    FROM tb_info_produto
+                    WHERE LOWER(nome) LIKE '%air max plus%';" . $auxScript;
+
+        return $this->conexaoBanco->query($script)->fetchAll();
+    }
 }

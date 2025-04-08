@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="./assets/css/tela_login.css">
     <link rel="stylesheet" href="./assets/css/tela_cadastro.css">
     <link rel="stylesheet" href="./assets/css/detalhes.css">
+    <link rel="stylesheet" href="./assets/css/teste.css">
 
 </head>
 
@@ -35,7 +36,7 @@
 
             <ul class="menu">
                 <li><a href="index.php">Inicio</a></li>
-                <li><a href="#">Populares</a></li>
+                <li><a href="./listarProdutos.php">Drops</a></li>
                 <li><a href="#">menu</a></li>
             </ul>
 

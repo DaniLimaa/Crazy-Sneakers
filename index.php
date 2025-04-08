@@ -2,10 +2,14 @@
 require './classes/Tenis.php';
 
 $titulo = 'Crazy Sneakers - Inicio';
+
+
+$exibirTitulo = true;
 include './includes/header.php';
 include './includes/banner.php';
 
 include './includes/marcas.php';
+
 include './includes/modelos.php';
 
 $tenis = new Tenis();
