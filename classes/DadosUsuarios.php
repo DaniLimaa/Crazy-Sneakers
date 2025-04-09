@@ -15,8 +15,8 @@ class DadosUsuarios
 
     public function exibirInformacoesUsuario()
     {
-        $teste = $_SESSION['id_info_usuario'];
-var_dump($teste);
+        $teste = $_SESSION['id'];
+
         $select = "SELECT 
         tb_usuario.id,
         tb_usuario.usuario,

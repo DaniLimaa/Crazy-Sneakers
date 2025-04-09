@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST' && !empty($_POST)) {
 
         session_start();
         
-        $_SESSION['id'] = $dadosUser['id'];
+        $_SESSION['id']              = $dadosUser['id'];
         $_SESSION['nome']            = $dadosUser['nome'];
         $_SESSION['email']           = $dadosUser['email'];
         $_SESSION['telefone']        = $dadosUser['telefone'];

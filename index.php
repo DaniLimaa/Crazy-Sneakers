@@ -3,7 +3,6 @@ require './classes/Tenis.php';
 
 $titulo = 'Crazy Sneakers - Inicio';
 
-
 $exibirTitulo = true;
 include './includes/header.php';
 include './includes/banner.php';

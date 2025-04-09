@@ -18,7 +18,7 @@
                         <label>Nome de usuario:</label>
                         <input type="text" value="<?= $informacoesUsuario['usuario'] ?>" disabled>
 
-                        <a href="#" class="btn btn-primary">Sair da Conta</a>
+                        <a href="./exibirDadosUsuario.php?sair=true" class="btn btn-primary">Sair</a>
 
                     </div>
                 </div>
