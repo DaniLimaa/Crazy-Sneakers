@@ -17,6 +17,8 @@
                         <input type="text" value="<?= $informacoesUsuario['rua'] ?>" disabled>
                         <label>Nome de usuario:</label>
                         <input type="text" value="<?= $informacoesUsuario['usuario'] ?>" disabled>
+                        <label>Status:</label>
+                        <input type="text" value="<?= $informacoesUsuario['status'] ?>" disabled>
 
                         <a href="./exibirDadosUsuario.php?sair=true" class="btn btn-primary">Sair</a>
 

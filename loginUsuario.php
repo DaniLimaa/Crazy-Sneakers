@@ -30,6 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST' && !empty($_POST)) {
         $_SESSION['n_casa']          = $dadosUser['n_casa'];
         $_SESSION['cidade']          = $dadosUser['cidade'];
         $_SESSION['ano_nascimento']  = $dadosUser['ano_nascimento'];
+        $_SESSION['status']          = $dadosUser['status'];
         
         
 

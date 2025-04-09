@@ -1,5 +1,7 @@
 <?php
     session_start();
+
+    $isAdmin = isset($_SESSION['status']) && $_SESSION['status'] === 'ADMIN';
 ?>
 
 <!DOCTYPE html>
@@ -24,6 +26,7 @@
     <link rel="stylesheet" href="./assets/css/tela_cadastro.css">
     <link rel="stylesheet" href="./assets/css/detalhes.css">
     <link rel="stylesheet" href="./assets/css/perfil.css">
+    <link rel="stylesheet" href="./assets/css/cadastrarProdutoAdmin.css">
 
 </head>
 
@@ -37,6 +40,9 @@
             <ul class="menu">
                 <li><a href="index.php">Inicio</a></li>
                 <li><a href="./listarProdutos.php">Drops</a></li>
+                <?php if ($isAdmin) { ?>
+                <li><a href="./cadastrarProdutoAdmin.php">Adicionar Produto</a></li>
+                <?php }  ?>
             </ul>
 
             <ul class="menu-icones">
