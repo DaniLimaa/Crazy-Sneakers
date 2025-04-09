@@ -1,8 +1,18 @@
+<?php
+
+    if ( isset($_FILES["imagemExibicaoSneaker"]) && !empty($_FILES['imagemExibicaoSneaker']))
+    {
+        move_uploaded_file($_FILES["imagemExibicaoSneaker"]["tmp_name"], "./assets/img/foto-exibir/" . $_FILES["imagemExibicaoSneaker"]["name"]);
+    }
+
+
+?>
+
 <section id="cadastro-produto">
     <main class="cadastro-produto-form">
         <h1>Cadastre um Sneaker</h1>
 
-        <form action="#" method="POST">
+        <form enctype="multipart/form-data" action="#" method="POST">
             <div class="row">
                 <div class="col-6">
                     <div class="info-sneakers">
@@ -29,19 +39,19 @@
                 <div class="col-6">
                     <div class="img-sneakers">
                         <label>Imagem de exibição do Sneaker</label>
-                        <input type="file" name="imagemExibicaoSneaker">
+                        <input type="file" accept="image/*" name="imagemExibicaoSneaker">
                         
                         <label>Imagem 1 do Sneaker</label>
-                        <input type="file" name="imagemSneaker1">
+                        <input type="file" accept="image/*" name="imagemSneaker1">
                         
                         <label>Imagem 2 do Sneaker</label>
-                        <input type="file" name="imagemSneaker2">
+                        <input type="file" accept="image/*" name="imagemSneaker2">
                         
                         <label>Imagem 3 do Sneaker</label>
-                        <input type="file" name="imagemSneaker3">
+                        <input type="file" accept="image/*" name="imagemSneaker3">
                         
                         <label>Imagem 4 do Sneaker</label>
-                        <input type="file" name="imagemSneaker4">
+                        <input type="file" accept="image/*" name="imagemSneaker4">
                     </div>
                 </div>
             </div>

@@ -3,10 +3,13 @@
         "conexao",
         "descricao",
         "exibicao",
+        "imagem",
         "informacoes",
         "Informacoes",
+        "marca",
         "nike",
         "preco",
+        "Preço",
         "tenis",
         "Usuarios"
     ]
