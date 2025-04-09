@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 08/04/2025 às 16:50
+-- Tempo de geração: 09/04/2025 às 16:56
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.0.30
 
@@ -124,20 +124,22 @@ CREATE TABLE `tb_info_usuario` (
   `bairro` varchar(100) NOT NULL,
   `n_casa` int(5) NOT NULL,
   `cidade` varchar(100) NOT NULL,
-  `ano_nascimento` int(4) NOT NULL
+  `ano_nascimento` int(4) NOT NULL,
+  `status` varchar(50) DEFAULT 'COMUM'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Despejando dados para a tabela `tb_info_usuario`
 --
 
-INSERT INTO `tb_info_usuario` (`id`, `nome`, `email`, `telefone`, `rua`, `bairro`, `n_casa`, `cidade`, `ano_nascimento`) VALUES
-(1, 'asdafda', 'aadfaf@asdf', 2147483647, 'adsfasdfa', 'asdfasdf', 23131, 'asdfasdfr', 2000),
-(2, 'roberot', 'robert@gmail.com', 2147483647, 'calouros', 'beco diagonal', 777, 'paris', 2010),
-(3, 'robert', 'robert@gmail.com', 2147483647, 'londres', 'casa do barai', 12323, 'brasil', 1999),
-(4, 'mark', 'invencivel@gmail', 2147483647, 'sol', 'lua', 7568, 'washinton', 2000),
-(5, 'admin', 'admin@gmail.com', 123456987, 'admin', 'admin', 106, 'admin', 2008),
-(6, 'little', 'cavanha@gmail.com', 2147483647, 'em baixo da ponte', 'centro', 0, 'americana', 2004);
+INSERT INTO `tb_info_usuario` (`id`, `nome`, `email`, `telefone`, `rua`, `bairro`, `n_casa`, `cidade`, `ano_nascimento`, `status`) VALUES
+(1, 'asdafda', 'aadfaf@asdf', 2147483647, 'adsfasdfa', 'asdfasdf', 23131, 'asdfasdfr', 2000, 'COMUM'),
+(2, 'roberot', 'robert@gmail.com', 2147483647, 'calouros', 'beco diagonal', 777, 'paris', 2010, 'COMUM'),
+(3, 'robert', 'robert@gmail.com', 2147483647, 'londres', 'casa do barai', 12323, 'brasil', 1999, 'COMUM'),
+(4, 'mark', 'invencivel@gmail', 2147483647, 'sol', 'lua', 7568, 'washinton', 2000, 'COMUM'),
+(5, 'admin', 'admin@gmail.com', 123456987, 'ADMIN', 'admin', 106, 'admin', 2008, 'ADMIN'),
+(6, 'little', 'cavanha@gmail.com', 2147483647, 'em baixo da ponte', 'centro', 0, 'americana', 2004, 'COMUM'),
+(7, 'gustavo', 'gustavo@gmail.com', 2147483647, 'grecia', 'atras do pague menos', 999, 'americana', 2008, 'COMUM');
 
 -- --------------------------------------------------------
 
@@ -289,7 +291,8 @@ INSERT INTO `tb_usuario` (`id`, `usuario`, `senha`, `id_info_usuario`) VALUES
 (3, 'jorge', '789456', 3),
 (4, 'invencivel', 'eve123', 4),
 (5, 'admin', 'admin', 5),
-(6, 'cavanha', '123321', 6);
+(6, 'cavanha', '123321', 6),
+(7, 'sobrera', 'gu123456', 7);
 
 --
 -- Índices para tabelas despejadas
@@ -369,7 +372,7 @@ ALTER TABLE `tb_info_produto`
 -- AUTO_INCREMENT de tabela `tb_info_usuario`
 --
 ALTER TABLE `tb_info_usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de tabela `tb_marcas`
@@ -405,7 +408,7 @@ ALTER TABLE `tb_tamanho_preco`
 -- AUTO_INCREMENT de tabela `tb_usuario`
 --
 ALTER TABLE `tb_usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
