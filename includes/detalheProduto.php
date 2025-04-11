@@ -18,7 +18,7 @@ $dados = $tenis-> exibirDetalheTenis();
 
                 <div class="container-tamanho">
                     <p>A partir de</p>
-                    <h2>R$ <?= number_format($dados['preco'], 2, ',', '.') ?></h2>
+                    <h2>R$ <?=$dados['preco']?></h2>
 
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"

@@ -1,57 +1,47 @@
-<?php
-
-    if ( isset($_FILES["imagemExibicaoSneaker"]) && !empty($_FILES['imagemExibicaoSneaker']))
-    {
-        move_uploaded_file($_FILES["imagemExibicaoSneaker"]["tmp_name"], "./assets/img/foto-exibir/" . $_FILES["imagemExibicaoSneaker"]["name"]);
-    }
-
-
-?>
-
 <section id="cadastro-produto">
     <main class="cadastro-produto-form">
         <h1>Cadastre um Sneaker</h1>
 
-        <form enctype="multipart/form-data" action="#" method="POST">
+        <form enctype="multipart/form-data" action="./auxCadastrarProduto.php" method="POST">
             <div class="row">
                 <div class="col-6">
                     <div class="info-sneakers">
                         <label>Nome do Sneaker</label>
-                        <input type="text" name="nomeSneaker">
+                        <input type="text" name="nome">
                         
                         <label>Cor do Sneaker</label>
-                        <input type="text" name="corSneaker">
+                        <input type="text" name="cor">
                         
                         <label>Preço do Sneaker</label>
-                        <input type="text" name="precoSneaker">
+                        <input type="text" name="preco">
                         
                         <label>Descricao do Sneaker</label>
-                        <input type="text" name="descSneaker">
+                        <input type="text" name="descricao">
                         
                         <label>Marca do Sneaker</label>
-                        <input type="text" name="marcaSneaker">
+                        <input type="text" name="marca">
                         
                         <label>Silhueta do Sneaker</label>
-                        <input type="text" name="silhuetaSneaker">
+                        <input type="text" name="silhueta">
                     </div>
                 </div>
                 
                 <div class="col-6">
                     <div class="img-sneakers">
                         <label>Imagem de exibição do Sneaker</label>
-                        <input type="file" accept="image/*" name="imagemExibicaoSneaker">
+                        <input type="file" name="foto_exibicao">
                         
                         <label>Imagem 1 do Sneaker</label>
-                        <input type="file" accept="image/*" name="imagemSneaker1">
+                        <input type="file" name="foto_1">
                         
                         <label>Imagem 2 do Sneaker</label>
-                        <input type="file" accept="image/*" name="imagemSneaker2">
+                        <input type="file" name="foto_2">
                         
                         <label>Imagem 3 do Sneaker</label>
-                        <input type="file" accept="image/*" name="imagemSneaker3">
+                        <input type="file" name="foto_3">
                         
                         <label>Imagem 4 do Sneaker</label>
-                        <input type="file" accept="image/*" name="imagemSneaker4">
+                        <input type="file" name="foto_4">
                     </div>
                 </div>
             </div>
