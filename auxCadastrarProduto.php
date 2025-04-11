@@ -30,14 +30,9 @@ if (isset($_FILES['foto_exibicao']['name']) && $_FILES['foto_exibicao']['error']
 
     $extensao = strtolower($extensao);
 
-    if (strstr('.jpg;.jpeg;.gif;.png', $extensao)) {
+    if (strstr('.jpg;.jpeg;.gif;.png;.webp', $extensao)) {
 
         $destino = 'assets/img/foto-exibir/ ' . $nome;
-    }
-
-    if ( @move_uploaded_file ( $arquivo_tmp, $destino ) ) {
-        echo 'Arquivo salvo com sucesso em : <strong>' . $destino . '</strong><br />';
-        echo ' < img src = "' . $destino . '" />';
     }
 }
 
@@ -51,14 +46,9 @@ if (isset($_FILES['foto_1']['name']) && $_FILES['foto_1']['error'] == 0) {
 
     $extensao = strtolower($extensao);
 
-    if (strstr('.jpg;.jpeg;.gif;.png', $extensao)) {
+    if (strstr('.jpg;.jpeg;.gif;.png;.webp', $extensao)) {
 
         $destino = 'assets/img/fotos-produtos/ ' . $nome;
-    }
-
-    if ( @move_uploaded_file ( $arquivo_tmp, $destino ) ) {
-        echo 'Arquivo salvo com sucesso em : <strong>' . $destino . '</strong><br />';
-        echo ' < img src = "' . $destino . '" />';
     }
 }
 
@@ -72,14 +62,9 @@ if (isset($_FILES['foto_2']['name']) && $_FILES['foto_2']['error'] == 0) {
 
     $extensao = strtolower($extensao);
 
-    if (strstr('.jpg;.jpeg;.gif;.png', $extensao)) {
+    if (strstr('.jpg;.jpeg;.gif;.png;.webp', $extensao)) {
 
         $destino = 'assets/img/fotos-produtos/ ' . $nome;
-    }
-
-    if ( @move_uploaded_file ( $arquivo_tmp, $destino ) ) {
-        echo 'Arquivo salvo com sucesso em : <strong>' . $destino . '</strong><br />';
-        echo ' < img src = "' . $destino . '" />';
     }
 }
 
@@ -93,14 +78,9 @@ if (isset($_FILES['foto_3']['name']) && $_FILES['foto_3']['error'] == 0) {
 
     $extensao = strtolower($extensao);
 
-    if (strstr('.jpg;.jpeg;.gif;.png', $extensao)) {
+    if (strstr('.jpg;.jpeg;.gif;.png;.webp', $extensao)) {
 
         $destino = 'assets/img/fotos-produtos/ ' . $nome;
-    }
-
-    if ( @move_uploaded_file ( $arquivo_tmp, $destino ) ) {
-        echo 'Arquivo salvo com sucesso em : <strong>' . $destino . '</strong><br />';
-        echo ' < img src = "' . $destino . '" />';
     }
 }
 
@@ -114,14 +94,9 @@ if (isset($_FILES['foto_4']['name']) && $_FILES['foto_4']['error'] == 0) {
 
     $extensao = strtolower($extensao);
 
-    if (strstr('.jpg;.jpeg;.gif;.png', $extensao)) {
+    if (strstr('.jpg;.jpeg;.gif;.png;.webp', $extensao)) {
 
         $destino = 'assets/img/fotos-produtos/ ' . $nome;
-    }
-
-    if ( @move_uploaded_file ( $arquivo_tmp, $destino ) ) {
-        echo 'Arquivo salvo com sucesso em : <strong>' . $destino . '</strong><br />';
-        echo ' < img src = "' . $destino . '" />';
     }
 }
 
@@ -190,3 +165,5 @@ $box->execute([
     'silhueta_id'     => $idSilhueta
 ]);
 
+echo "<script>alert('Produto cadastrado com sucesso!');</script>";
+echo "<script>window.location.href = './index.php';</script>";
