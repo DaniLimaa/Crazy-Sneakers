@@ -179,3 +179,14 @@ $resultadoSilhueta = $box->fetch(PDO::FETCH_ASSOC);
 
 $idSilhueta = $resultadoSilhueta['id'];
 
+$insert = "INSERT INTO tb_produtos (info_produto_id, foto_produto_id, marcas_id, silhueta_id) VALUE (:info_produto_id, :foto_produto_id, :marcas_id, :silhueta_id)";
+
+$box = $conexaoBanco->prepare($insert);
+
+$box->execute([
+    'info_produto_id' => $id_info_produto,
+    'foto_produto_id' => $id_foto_produto,
+    'marcas_id'        => $idMarca,
+    'silhueta_id'     => $idSilhueta
+]);
+

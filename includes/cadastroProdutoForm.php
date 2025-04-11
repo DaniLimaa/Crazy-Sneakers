@@ -7,6 +7,15 @@
                 <div class="col-6">
                     <div class="info-sneakers">
                         <label>Nome do Sneaker</label>
+
+                        <input type="hidden"  placeholder="id"     name="info_produto_id" >
+
+                        <input type="hidden"  placeholder="id"     name="foto_produto_id" >
+
+                        <input type="hidden"  placeholder="id"     name="marcas_id" >
+
+                        <input type="hidden"  placeholder="id"     name="silhueta_id" >
+
                         <input type="text" name="nome">
                         
                         <label>Cor do Sneaker</label>
