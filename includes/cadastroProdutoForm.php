@@ -45,7 +45,7 @@
                     </div>
                 </div>
             </div>
-
+    
             <input type="submit" value="Cadastrar Sneaker" class="btn-cadastrar-sneaker">
             
         </form>

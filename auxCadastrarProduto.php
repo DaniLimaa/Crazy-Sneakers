@@ -152,3 +152,30 @@ $box->execute([
 ]);
 
 $id_foto_produto = $conexaoBanco->lastInsertId();
+
+//Procurando id das marcas
+$script = "SELECT id FROM tb_marcas WHERE marca = :marca";
+
+$box = $conexaoBanco->prepare($script);
+
+$box->execute([
+    'marca' => $marcaSneakerForm
+]);
+
+$resultadoMarca = $box->fetch(PDO::FETCH_ASSOC);
+
+$idMarca = $resultadoMarca['id'];
+
+//Procurando id das silhuetas
+$script = "SELECT id FROM tb_silhueta WHERE silhueta = :silhueta";
+
+$box = $conexaoBanco->prepare($script);
+
+$box->execute([
+    'silhueta' => $silhuetaSneakerForm
+]);
+
+$resultadoSilhueta = $box->fetch(PDO::FETCH_ASSOC);
+
+$idSilhueta = $resultadoSilhueta['id'];
+
