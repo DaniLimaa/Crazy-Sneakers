@@ -38,8 +38,6 @@
                         <label>Senha:</label>
                         <input type="text" value="<?= $informacoesUsuario['senha'] ?>" disabled>
 
-                        <a href="#" class="btn btn-primary">Editar Informações</a>
-
                     </div>
                 </div>
             </div>

@@ -54,9 +54,11 @@
 }
 
 #perfil .container-perfil .primeira-coluna>a {
-    width: 600px;
+    width: 300px;
     height: 50px;
     margin-top: 40px;
+    margin-left: 100%;
+    margin-bottom: 50px;
 
     font-size: 24px;
     font-weight: 500;
@@ -81,11 +83,4 @@
     font-weight: 500;
     color: #fff;
     border: none;
-
-    background-color: #d6c20c;
-    transition: 0.3s ease-in-out;
-}
-
-#perfil .container-perfil .segunda-coluna>a:hover {
-    transform: scale(1.1);
 }
