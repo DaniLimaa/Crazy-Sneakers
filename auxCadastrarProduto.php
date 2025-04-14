@@ -32,7 +32,8 @@ if (isset($_FILES['foto_exibicao']['name']) && $_FILES['foto_exibicao']['error']
 
     if (strstr('.jpg;.jpeg;.gif;.png;.webp', $extensao)) {
 
-        $destino = 'assets/img/foto-exibir/ ' . $nome;
+        $destino = 'assets/img/foto-exibir/' . $nome;
+        move_uploaded_file($arquivo_tmp, $destino);
     }
 }
 
@@ -48,7 +49,8 @@ if (isset($_FILES['foto_1']['name']) && $_FILES['foto_1']['error'] == 0) {
 
     if (strstr('.jpg;.jpeg;.gif;.png;.webp', $extensao)) {
 
-        $destino = 'assets/img/fotos-produtos/ ' . $nome;
+        $destino = 'assets/img/fotos-produtos/' . $nome;
+        move_uploaded_file($arquivo_tmp, $destino);
     }
 }
 
@@ -64,7 +66,8 @@ if (isset($_FILES['foto_2']['name']) && $_FILES['foto_2']['error'] == 0) {
 
     if (strstr('.jpg;.jpeg;.gif;.png;.webp', $extensao)) {
 
-        $destino = 'assets/img/fotos-produtos/ ' . $nome;
+        $destino = 'assets/img/fotos-produtos/' . $nome;
+        move_uploaded_file($arquivo_tmp, $destino);
     }
 }
 
@@ -80,7 +83,8 @@ if (isset($_FILES['foto_3']['name']) && $_FILES['foto_3']['error'] == 0) {
 
     if (strstr('.jpg;.jpeg;.gif;.png;.webp', $extensao)) {
 
-        $destino = 'assets/img/fotos-produtos/ ' . $nome;
+        $destino = 'assets/img/fotos-produtos/' . $nome;
+        move_uploaded_file($arquivo_tmp, $destino);
     }
 }
 
@@ -96,7 +100,8 @@ if (isset($_FILES['foto_4']['name']) && $_FILES['foto_4']['error'] == 0) {
 
     if (strstr('.jpg;.jpeg;.gif;.png;.webp', $extensao)) {
 
-        $destino = 'assets/img/fotos-produtos/ ' . $nome;
+        $destino = 'assets/img/fotos-produtos/' . $nome;
+        move_uploaded_file($arquivo_tmp, $destino);
     }
 }
 
@@ -161,7 +166,7 @@ $box = $conexaoBanco->prepare($insert);
 $box->execute([
     'info_produto_id' => $id_info_produto,
     'foto_produto_id' => $id_foto_produto,
-    'marcas_id'        => $idMarca,
+    'marcas_id'       => $idMarca,
     'silhueta_id'     => $idSilhueta
 ]);
 
