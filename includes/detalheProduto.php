@@ -7,6 +7,9 @@ $id = $_GET['id'];
 $tenis = new Tenis();
 $dados = $tenis-> exibirDetalheTenis();
 
+$tenis = new Tenis();
+$tamanho = $tenis->exibirTamanho();
+
 ?>
 
 <section id="detalhes-produto">
@@ -26,10 +29,14 @@ $dados = $tenis-> exibirDetalheTenis();
                             Selecione o tamanho
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li class="dropdown-item">
+                                <h7><?= $tamanho['tamanho']?></h7>
+                                <p>R$ <?=$dados['preco']?></p>
+                                <a href="#"><button>Comprar</button></a></li>
                         </ul>
                     </div>
                 </div>
+
 
                 <div class="container-descricao">
                     <h3>SILHUETA</h3>
@@ -61,9 +68,18 @@ $dados = $tenis-> exibirDetalheTenis();
                             <figure>
                                 <img src="./assets/img/<?= ('fotos-produtos/' . $dados['foto_3']) ?>" alt="">
                             </figure>
+
+                            <?php 
+                            if (!empty($dados['foto_4']) && isset($dados['foto_4'])) { ?>
                             <figure>
                                 <img src="./assets/img/<?= ('fotos-produtos/' . $dados['foto_4']) ?>" alt="">
                             </figure>
+                            <?php } else {
+                                echo '<style>
+                                overflow: hidden;
+                                </style>';
+                            } ?>
+
                         </div>
                     </div>
                 </div>

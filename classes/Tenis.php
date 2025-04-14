@@ -51,6 +51,14 @@ class Tenis
 
         return $this->conexaoBanco->query($script)->fetch();
     }
+
+    public function exibirTamanho()
+    {
+        $script = "SELECT * FROM tb_tamanho";
+
+        return $this->conexaoBanco->query($script)->fetch();
+
+    }
     
     public function exibirSilhuetaDunkLow($limite = '')
     {
