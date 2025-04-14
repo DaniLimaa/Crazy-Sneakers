@@ -32,7 +32,7 @@ $tamanho = $tenis->exibirTamanho();
                                 <li class="dropdown-item">
                                 <h7><?= $tamanho['tamanho']?></h7>
                                 <p>R$ <?=$dados['preco']?></p>
-                                <a href="#"><button>Comprar</button></a></li>
+                                <a href="?adicionar=<?php echo $key?>"><button>Comprar</button></a></li>
                         </ul>
                     </div>
                 </div>
