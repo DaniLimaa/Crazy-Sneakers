@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 09/04/2025 às 16:56
+-- Tempo de geração: 14/04/2025 às 21:17
 -- Versão do servidor: 10.4.32-MariaDB
--- Versão do PHP: 8.0.30
+-- Versão do PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -63,7 +63,10 @@ INSERT INTO `tb_foto_produto` (`id`, `foto_1`, `foto_2`, `foto_3`, `foto_4`) VAL
 (21, 'foto-produto-puma-180-white1.jpg', 'foto-produto-puma-180-white2.jpg', 'foto-produto-puma-180-white3.jpg', ''),
 (22, 'foto-produto-vans-knu-skool-black-true-white1.webp', 'foto-produto-vans-knu-skool-black-true-white2.webp', 'foto-produto-vans-knu-skool-black-true-white3.webp', 'foto-produto-vans-knu-skool-black-true-white4.webp'),
 (23, 'foto-produto-vans-knu-skool-brown1.webp', 'foto-produto-vans-knu-skool-brown2.webp', 'foto-produto-vans-knu-skool-brown3.webp', 'foto-produto-vans-knu-skool-brown4.webp'),
-(24, 'foto-produto-vans-knu-skool-disney-black1.webp', 'foto-produto-vans-knu-skool-disney-black2.webp', 'foto-produto-vans-knu-skool-disney-black3.webp', 'foto-produto-vans-knu-skool-disney-black4.webp');
+(24, 'foto-produto-vans-knu-skool-disney-black1.webp', 'foto-produto-vans-knu-skool-disney-black2.webp', 'foto-produto-vans-knu-skool-disney-black3.webp', 'foto-produto-vans-knu-skool-disney-black4.webp'),
+(25, 'nike-dunk-low-panda-1.webp', 'nike-dunk-low-panda-2.webp', 'nike-dunk-low-panda-3.webp', 'nike-dunk-low-panda-4.webp'),
+(26, 'nike-air-jordan-1-low-unc-1.png', 'nike-air-jordan-1-low-unc-2.png', 'nike-air-jordan-1-low-unc-3.png', ''),
+(27, 'nike-dunk-low-polaroid-1.webp', 'nike-dunk-low-polaroid-2.webp', 'nike-dunk-low-polaroid-3.webp', '');
 
 -- --------------------------------------------------------
 
@@ -107,7 +110,10 @@ INSERT INTO `tb_info_produto` (`id`, `nome`, `cor`, `preco`, `descricao`, `foto_
 (20, 'Vans Knu Skool Black True White', 'Preto', 700, 'O Knu Skool é uma interpretação moderna de um estilo clássico dos anos 90, definido por sua língua inchada e Sidestripe™ moldado em 3D, e amarrado com cadarços grandes e grossos. Com seu perfil marcante e detalhes de estilo dramáticos, o Knu Skool reproduz o original Old Skool™ enquanto mistura um ícone do passado com as tendências de hoje.', 'foto-exibir-knu-skool-black-true-white.webp'),
 (21, 'Vans Knu Skool Brown', 'Marrom', 700, 'Os Knu Skool são uma interpretação moderna de um estilo clássico dos anos 90, definido pela sua pala volumosa e risca lateral moldada em 3D, e com atacadores grandes e grossos. Com o seu perfil impactante e detalhes de estilo dramáticos, os Knu Skool baseiam-se nos Old Skool originais, misturando um ícone do passado com as tendências atuais.', 'foto-exibir-knu-skool-brown.webp'),
 (22, 'Disney x Vans Knu Skool Black', 'Marrom', 700, 'Por 100 anos, a paixão da Disney tem sido contar histórias. De uma geração para outra, as histórias da Disney inspiraram criadores, influenciaram a cultura pop e nos uniram. Este ano, a Vans tem o orgulho de celebrar um século de histórias e personagens inesquecíveis da Disney que conquistaram os corações do público em todo o mundo com esta coleção feita para toda a família. Entrando no mundo da Disney através de lentes Off The Wall, o Disney x Vans Knu Skool homenageia O Rei Leão com uma reviravolta ao canalizar o intrigante tio Scar de Simba. Com seu rosto estampado na sola e silhuetas de hienas bordadas nos calcanhares, este sapato fofo dos anos 90 permite que você celebre a magia atemporal da Disney todos os dias.', 'foto-exibir-knu-skool-disney.webp'),
-(23, 'Puma-180 White', 'Branco', 750, 'Estamos aproveitando a estética do skate dos anos 90 e renovando-a para a geração atual de skatistas com o PUMA-180. Este tênis apresenta um design volumoso, acolchoamento grosso e cabedal técnico lo-fi.', 'foto-exibir-puma-180-white.jpg');
+(23, 'Puma-180 White', 'Branco', 750, 'Estamos aproveitando a estética do skate dos anos 90 e renovando-a para a geração atual de skatistas com o PUMA-180. Este tênis apresenta um design volumoso, acolchoamento grosso e cabedal técnico lo-fi.', 'foto-exibir-puma-180-white.jpg'),
+(24, 'Nike Dunk Low Black Panda (2021)', 'Preto', 650, 'Em um dos primeiros lançamentos da linha Dunk em 2021 a Nike traz uma colorway clássica de volta a tona neste novo lançamento. O Nike Dunk Low Black retoma um esquema de cores que não tem erro, o simples preto e branco. Colorways como essas já foram utilizadas em outros modelos de Dunk no passado, no entanto é sempre bom ver uma remasterização com as tecnologias de conforto atuais', 'nike-dunk-low-exibir.webp'),
+(25, 'Air Jordan 1 Low UNC 2021', 'Branco', 800, 'Air Jordan 1 de cano baixo “UNC” apresenta uma base de couro branco com sobreposições University Blue, logotipos Jumpman e sola de borracha. Detalhes de azul marinho nos Swooshes, línguas, forro e logotipo wings no topo de uma entressola branca completam o design.', 'nike-air-jordan-1-low-unc-exibir.png'),
+(26, 'Nike SB Dunk Low Polaroid', 'Preto', 740, 'A mudança pode acontecer em um instante e desde 1937, a visão da Polaroid transformou a forma como vemos o mundo. Motivada para capturar momentos, a campanha \"Beyond the Rainbow\" tem uma sinergia especial com a criatividade e curiosidade que desafia constantemente o skate e molda sua paisagem.  O \"Polaroid\" SB Dunk Low cumpre essa promessa de forma vívida, com um tratamento technicolor que traz novas dimensões às linhas clássicas do Dunk. Começando com um impressionante Swoosh de três tons, o SB Dunk Low \"Polaroid\" mistura materiais refletivos, bordados personalizados e uma palmilha codificada por cores que se concentra na imaginação. Com base na história do design, cada par vem com sete opções de renda com gradação de cores, permitindo que você escolha seu modo de expressão.', 'nike-dunk-low-polaroid-exibir.webp');
 
 -- --------------------------------------------------------
 
@@ -204,7 +210,10 @@ INSERT INTO `tb_produtos` (`id`, `info_produto_id`, `marcas_id`, `silhueta_id`, 
 (20, 20, 3, 7, 22),
 (21, 21, 3, 7, 23),
 (22, 22, 3, 7, 24),
-(23, 23, 5, 9, 21);
+(23, 23, 5, 9, 21),
+(24, 24, 1, 4, 25),
+(25, 25, 1, 10, 26),
+(26, 26, 1, 4, 27);
 
 -- --------------------------------------------------------
 
@@ -249,26 +258,9 @@ CREATE TABLE `tb_tamanho` (
 --
 
 INSERT INTO `tb_tamanho` (`id`, `tamanho`) VALUES
-(1, 42);
-
--- --------------------------------------------------------
-
---
--- Estrutura para tabela `tb_tamanho_preco`
---
-
-CREATE TABLE `tb_tamanho_preco` (
-  `id` int(11) NOT NULL,
-  `tamanho_id` int(11) NOT NULL,
-  `preco_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Despejando dados para a tabela `tb_tamanho_preco`
---
-
-INSERT INTO `tb_tamanho_preco` (`id`, `tamanho_id`, `preco_id`) VALUES
-(1, 1, 1);
+(1, 42),
+(2, 41),
+(3, 40);
 
 -- --------------------------------------------------------
 
@@ -341,12 +333,6 @@ ALTER TABLE `tb_tamanho`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices de tabela `tb_tamanho_preco`
---
-ALTER TABLE `tb_tamanho_preco`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Índices de tabela `tb_usuario`
 --
 ALTER TABLE `tb_usuario`
@@ -360,13 +346,13 @@ ALTER TABLE `tb_usuario`
 -- AUTO_INCREMENT de tabela `tb_foto_produto`
 --
 ALTER TABLE `tb_foto_produto`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT de tabela `tb_info_produto`
 --
 ALTER TABLE `tb_info_produto`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT de tabela `tb_info_usuario`
@@ -384,7 +370,7 @@ ALTER TABLE `tb_marcas`
 -- AUTO_INCREMENT de tabela `tb_produtos`
 --
 ALTER TABLE `tb_produtos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT de tabela `tb_silhueta`
@@ -396,13 +382,7 @@ ALTER TABLE `tb_silhueta`
 -- AUTO_INCREMENT de tabela `tb_tamanho`
 --
 ALTER TABLE `tb_tamanho`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT de tabela `tb_tamanho_preco`
---
-ALTER TABLE `tb_tamanho_preco`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `tb_usuario`
